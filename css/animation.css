@@ -1,0 +1,204 @@
+@import url("https://fonts.googleapis.com/css?family=Arvo:700");
+body {
+  font-family: "Arvo", serif;
+  background: black;
+  position: relative;
+}
+body:after {
+  position: absolute;
+  color: rgba(255, 255, 255, 0.1);
+  z-index: 2;
+  -webkit-transform: rotate(90deg) translateX(-18vh);
+          transform: rotate(90deg) translateX(-18vh);
+  -webkit-transform-origin: 0% 100%;
+          transform-origin: 0% 100%;
+  white-space: nowrap;
+  top: 0;
+  left: 0;
+  font-size: 18vh;
+}
+
+svg {
+  position: absolute;
+}
+
+/* personal-photo */
+.personal-photo{
+  width: 260px;
+  height: 260px;
+  position: absolute;
+  margin: auto;
+  left: 35px;
+  right: 0;
+  top: 0;
+  bottom: 140px;
+}
+
+.big-cycle{
+  width: 260px;
+  height: 260px;
+  margin:0 auto;
+  padding-top: 70px;
+}
+
+.middle-cycle{
+  display: inline-block;
+  width: 240px;
+  height: 240px;
+  margin: 10px;
+}
+
+.small-cycle{
+  width: 220px;
+  height: 220px;
+  text-align: center;
+  margin: 10px auto 10px auto;
+}
+
+.big-cycle-img,.middle-cycle-img,.small-cycle-img{
+  position: absolute;
+}
+
+.head-img-div{
+  position: relative;
+  z-index: 2;
+  display: inline;
+  width: 200px;
+  height: 200px;
+  margin-top: 300px;
+}
+
+.head-img {
+  display: inline-block;
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  border: 3px solid pink;
+  margin: 7px;
+  -webkit-animation: headneon 1.5s ease-in-out infinite alternate;
+  -moz-animation: headneon 1.5s ease-in-out infinite alternate;
+  animation: headneon 1.5s ease-in-out infinite alternate;
+}
+
+@-webkit-keyframes headneon {
+  from {
+      box-shadow: 0 0 1px #fff,
+                  0 0 2px #fff,
+                  0 0 3px #fff,
+                  0 0 4px #fff;
+  }
+  to {
+      box-shadow: 0 0 5px #fff,
+                  0 0 10px #fff,
+                  0 0 15px #fff,
+                  0 0 20px #fff;
+  }
+}
+
+@-moz-keyframes headneon {
+  from {
+      box-shadow: 0 0 1px #fff,
+                  0 0 2px #fff,
+                  0 0 3px #fff,
+                  0 0 4px #fff;
+  }
+  to {
+      box-shadow: 0 0 5px #fff,
+                  0 0 10px #fff,
+                  0 0 15px #fff,
+                  0 0 20px #fff;
+  }
+}
+
+.big-cycle-img{
+  animation-name: clockwise;
+  animation-duration:1s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+  animation-direction: normal;
+
+  /*safari & Chrome */
+  -webkit-animation-name:clockwise;
+  -webkit-animation-duration:1s;
+  -webkit-animation-timing-function: linear;
+  -webkit-animation-iteration-count: infinite;
+  -webkit-animation-direction: normal;
+}
+
+.middle-cycle-img{
+  animation-name: anticlockwise;
+  animation-duration:1s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+  animation-direction: normal;
+
+  /*safari & Chrome */
+  -webkit-animation-name:anticlockwise;
+  -webkit-animation-duration:1s;
+  -webkit-animation-timing-function: linear;
+  -webkit-animation-iteration-count: infinite;
+  -webkit-animation-direction: normal;
+}
+
+.small-cycle-img{
+  animation-name: clockwise;
+  animation-duration:1s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+  animation-direction: normal;
+
+  /*safari & Chrome */
+  -webkit-animation-name:clockwise;
+  -webkit-animation-duration:1s;
+  -webkit-animation-timing-function: linear;
+  -webkit-animation-iteration-count: infinite;
+  -webkit-animation-direction: normal;
+}
+
+@keyframes clockwise{
+  from {
+      -webkit-transform:rotate(0deg);
+      -moz-transform:rotate(0deg);
+      -ms-transform: rotate(0deg);
+      -o-transform: rotate(0deg);
+  }
+  to {
+      -webkit-transform:rotate(360deg);
+      -moz-transform:rotate(360deg);
+      -ms-transform: rotate(360deg);
+      -o-transform: rotate(360deg);
+  }
+}
+
+@-webkit-keyframes clockwise{
+  from {
+      -webkit-transform:rotate(0deg);
+  }
+  to {
+      -webkit-transform:rotate(360deg);
+  }
+}
+
+@keyframes anticlockwise{
+  from {
+      -webkit-transform:rotate(0deg);
+      -moz-transform:rotate(0deg);
+      -ms-transform: rotate(0deg);
+      -o-transform: rotate(0deg);
+  }
+  to {
+      -webkit-transform:rotate(-360deg);
+      -moz-transform:rotate(-360deg);
+      -ms-transform: rotate(-360deg);
+      -o-transform: rotate(-360deg);
+  }
+}
+
+@-webkit-keyframes anticlockwise{
+  from {
+      -webkit-transform:rotate(0deg);
+  }
+  to {
+      -webkit-transform:rotate(-360deg);
+  }
+}
